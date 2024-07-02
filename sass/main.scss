@@ -1,19 +1,17 @@
+@import 'abstracts/_variables';
+@import 'abstracts/_functions';
+@import 'abstracts/_mixins';
 
-@import url('abstracts/_variables.scss');
-@import url('abstracts/_functions.scss');
-@import url('abstracts/_mixins.scss');
+@import 'base/_base';
+@import 'base/_animations';
+@import 'base/_typography';
+@import 'base/_utillities';
 
+@import 'pages/_home';
 
-@import url('base/_base.scss');
-@import url('base/_animations.scss');
-@import url('base/_typography.scss');
-@import url('base/_utillities.scss');
-
-@import url('pages/_home.scss');
-
-@import url('components/_button.scss');
-
-@import url('layout/_header.scss');
+@import 'components/_button';
+@import 'components/_composition';
 
 
-
+@import 'layout/_header';
+@import 'layout/_grid';
