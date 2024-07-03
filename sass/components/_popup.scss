@@ -18,6 +18,11 @@
 
         width: 75%;
         display: table;
+        @include mediaQueryManager(tab-port) {
+            display: flex;
+            flex-direction: column;
+           
+        }
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px; 
@@ -29,6 +34,11 @@
     &__left {
         width: 33.333333%;
         display: table-cell;
+        @include mediaQueryManager(tab-port) {
+            width: 100%;
+           
+           
+        }
     }
 
     &__right {
@@ -36,11 +46,21 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        @include mediaQueryManager(tab-port) {
+            width: 100%;
+   
+       
+        }
+        
     }
     &__img {
         display: block;
         width: 100%;
-
+        @include mediaQueryManager(tab-port) {
+            height: 20%;
+   
+       
+        }
     }   
 
     &__text {
@@ -63,6 +83,18 @@
     }
     
     &__close {
+
+        @include mediaQueryManager(tab-port) {
+            z-index: 20;
+            background-color: $color-white;
+            padding: .5rem;
+            border-radius: 50%;
+            width: 3rem;
+            text-align: center;
+   
+       
+        }
+      
         &:link,
         &:visited {
             color: $color-grey-dark;

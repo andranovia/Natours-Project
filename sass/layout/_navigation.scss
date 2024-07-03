@@ -12,6 +12,14 @@
     z-index: 2000;
     right: 6rem;
     text-align: center;
+    @include mediaQueryManager(tab-port){
+      top: 4rem;
+      right: 4rem;
+    }
+    @include mediaQueryManager(phone){
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
   &__background {
     height: 6rem;
@@ -26,6 +34,16 @@
     );
     z-index: 1000;
 
+    @include mediaQueryManager(tab-port){
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    
+    @include mediaQueryManager(phone){
+      top: 3.5rem;
+      right: 3.5rem;
+    }
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
   }
